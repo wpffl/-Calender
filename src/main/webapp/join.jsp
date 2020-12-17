@@ -192,7 +192,6 @@ action="login.jsp" onsubmit="return checkValue()">
 	<input type="button" id="j_btn_1" value="취소" onclick="location.href='login.jsp'">
 	</form>
 	
-	
 </div>
 </div>
 </body>

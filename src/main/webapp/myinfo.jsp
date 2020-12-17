@@ -4,49 +4,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<script>
-
-</script>
-
-<style>
-		
-	#outline {
-		margin-top:50px;
-	}
-	
-	#table1 {
-		width:300px;
-		height:550px;
-		border: 1px solid skyblue;
-	    border-top-left-radius:10px;
-		border-top-right-radius:10px;
-		border-bottom-left-radius:10px;
-		border-bottom-right-radius:10px;
-	}
-	
-	input[type=text]{
-	    padding: 6px 8px;
-	    margin: 3px 0;
-	    display: inline-block;
-	    border: 1px solid #ccc;
-	    border-radius: 4px;
-	}
-	    
-</style>
-
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="./css/myinfo.css">
 </head>
 <body>
 <div align="center" id="outline">
-<div id="table1">
-<h1>회원가입</h1>
+<div>
+<h1>회원정보 수정</h1>
 <form action="myinfo.do">
 <input type="hidden" name="id" value="${id}"> 
-	<table>
+	<table id="table1">
 		<tr>
-			<td>비밀번호</td>
+			<td id=text>비밀번호</td>
 		</tr>
 		<tr>
 			<td>
@@ -55,19 +25,19 @@
 		</tr>
 		
 		<tr>
-			<td>비밀번호 확인</td>
+			<td id=text>비밀번호 확인</td>
 		</tr>
 		<tr>
 			<td><input type="password" name="pwdcheck"></td>
 		</tr>
 			<tr>
-			<td>닉네임</td>
+			<td id=text>닉네임</td>
 		</tr>
 		<tr>
-			<td><input type="text" name="nickname" value="%{nickname}"></td>
+			<td><input type="text" name="nickname" value="${nickname}"></td>
 		</tr>
 		<tr>
-			<td>생일</td>
+			<td id=text1>생일</td>
 		</tr>
 		<tr>
 		<td>
@@ -101,7 +71,7 @@
 		</tr>
 		 
 		 <tr>
-			 <td>전화번호</td>
+			 <td id=text>전화번호</td>
 		 </tr>
 		 <tr>
 			 <td>
@@ -112,7 +82,7 @@
 		 </tr>
 		 
 		 <tr>
-			 <td>이메일</td>
+			 <td id=text1>이메일</td>
 		 </tr>
 		 <tr>
 			 <td><input type="text" name="email" value="${user.email}"></td>
